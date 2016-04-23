@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MapCell" id="hZ1-dt-8W5" customClass="MapTableViewCell" customModule="HiddenGems" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hZ1-dt-8W5" id="MXp-oO-o2p">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KAh-qI-ZSe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                    </mapView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="KAh-qI-ZSe" secondAttribute="trailing" constant="-8" id="FwN-Uh-Ivk"/>
+                    <constraint firstItem="KAh-qI-ZSe" firstAttribute="top" secondItem="MXp-oO-o2p" secondAttribute="topMargin" constant="-8" id="SrO-2y-kc7"/>
+                    <constraint firstItem="KAh-qI-ZSe" firstAttribute="leading" secondItem="MXp-oO-o2p" secondAttribute="leadingMargin" constant="-8" id="X3U-aA-6KI"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="KAh-qI-ZSe" secondAttribute="bottom" constant="-8" id="gHN-6S-LPS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mapview" destination="KAh-qI-ZSe" id="X1U-UI-rcD"/>
+            </connections>
+            <point key="canvasLocation" x="293" y="369"/>
+        </tableViewCell>
+    </objects>
+</document>
